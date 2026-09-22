@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coctelería de Autor | Leonardo Gonzales</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .portfolio-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #334155;
+            padding-bottom: 15px;
+        }
+        .btn-back {
+            background-color: #334155;
+            color: #fff;
+            padding: 8px 16px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: background 0.2s ease;
+        }
+        .btn-back:hover { background-color: #475569; }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .gallery-item {
+            background: #1e293b;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid #334155;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        .gallery-info { padding: 15px; }
+        .gallery-info h3 { font-size: 1rem; color: #f59e0b; margin-bottom: 5px; }
+        .gallery-info p { font-size: 0.8rem; color: #94a3b8; }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <header class="portfolio-header">
+            <div>
+                <h2><i class="fa-solid fa-martini-glass-citrus" style="color: #f59e0b;"></i> Coctelería de Autor & Cartas</h2>
+                <p style="color: #94a3b8; font-size: 0.85rem;">Presentaciones, cartas de bebidas y barras móviles</p>
+            </div>
+            <a href="index.html" class="btn-back">
+                <i class="fa-solid fa-arrow-left"></i> Volver al Menú
+            </a>
+        </header>
+
+        <section class="gallery-grid">
+            <article class="gallery-item">
+                <img src="https://via.placeholder.com/400x250/1e293b/f59e0b?text=Cocteleria+de+Autor" alt="Coctelería de Autor">
+                <div class="gallery-info">
+                    <h3>Cócteles Signature</h3>
+                    <p>Muestra de cócteles de autor con botánicos y cristalería fina[cite: 9].</p>
+                </div>
+            </article>
+
+            <article class="gallery-item">
+                <img src="https://via.placeholder.com/400x250/1e293b/f59e0b?text=Servicio+Barra+Libre" alt="Barra Libre">
+                <div class="gallery-info">
+                    <h3>Servicio de Barra Móvil</h3>
+                    <p>Montaje y atención premium para bodas, aniversarios y corporativos[cite: 9].</p>
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

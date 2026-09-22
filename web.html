@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Web | Leonardo Gonzales</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .portfolio-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #334155;
+            padding-bottom: 15px;
+        }
+        .btn-back {
+            background-color: #334155;
+            color: #fff;
+            padding: 8px 16px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: background 0.2s ease;
+        }
+        .btn-back:hover { background-color: #475569; }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .gallery-item {
+            background: #1e293b;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid #334155;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        .gallery-info { padding: 15px; }
+        .gallery-info h3 { font-size: 1rem; color: #38bdf8; margin-bottom: 5px; }
+        .gallery-info p { font-size: 0.8rem; color: #94a3b8; }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <header class="portfolio-header">
+            <div>
+                <h2><i class="fa-solid fa-code" style="color: #38bdf8;"></i> Portafolio Web & Digital</h2>
+                <p style="color: #94a3b8; font-size: 0.85rem;">Proyectos maquetados, tiendas y soluciones digitales</p>
+            </div>
+            <a href="index.html" class="btn-back">
+                <i class="fa-solid fa-arrow-left"></i> Volver al Menú
+            </a>
+        </header>
+
+        <section class="gallery-grid">
+            <article class="gallery-item">
+                <img src="https://via.placeholder.com/400x250/1e293b/38bdf8?text=Landing+Page+Restaurante" alt="Landing Page">
+                <div class="gallery-info">
+                    <h3>Landing Page para Restaurante</h3>
+                    <p>Diseño web responsivo con menú digital QR e integración a WhatsApp[cite: 9].</p>
+                </div>
+            </article>
+
+            <article class="gallery-item">
+                <img src="https://via.placeholder.com/400x250/1e293b/38bdf8?text=Sistema+de+Reservas" alt="Web App">
+                <div class="gallery-info">
+                    <h3>Web de Reservas & Servicios</h3>
+                    <p>Plataforma para selección de citas en línea y configuración cPanel/SSL[cite: 9, 11].</p>
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
