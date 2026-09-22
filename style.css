@@ -1,0 +1,114 @@
+/* Estilos Base Elegantes y Oscuros */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0f172a;
+    color: #f8fafc;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px 15px;
+}
+
+.container {
+    width: 100%;
+    max-width: 480px; /* Tamaño optimizado para pantallas móviles */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Header Perfil */
+.profile {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.avatar-img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #38bdf8;
+    margin: 0 auto 15px;
+    display: block;
+}
+
+.profile h1 {
+    font-size: 1.6rem;
+    margin-bottom: 5px;
+}
+
+.tagline {
+    font-size: 0.9rem;
+    color: #94a3b8;
+}
+
+/* Tarjetas de Servicios */
+.card {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+}
+
+.card h2 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: #38bdf8;
+}
+
+.card p {
+    font-size: 0.88rem;
+    color: #cbd5e1;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+/* Botones */
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn {
+    display: block;
+    text-align: center;
+    padding: 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+}
+
+.btn-primary {
+    background-color: #25d366; /* Verde WhatsApp */
+    color: #000;
+}
+
+.btn-primary:hover {
+    background-color: #1eb956;
+}
+
+.btn-secondary {
+    background-color: #334155;
+    color: #f8fafc;
+}
+
+.btn-secondary:hover {
+    background-color: #475569;
+}
+
+.btn-vcard {
+    background: linear-gradient(135deg, #6366f1, #a855f7);
+    color: white;
+    margin-top: 10px;
+}
